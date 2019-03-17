@@ -1,5 +1,9 @@
-const friends = [];
+var path = require('path');
+var friendsData = require("../data/friends");
+module.exports = function(app) {
 
-friends.push({name: "bob", 'phoneNumber': "9999",  email: "ew@dfs", uniqueID:124134325})
+//all get post routes go her
 
-module.exports = routes
+
+
+}
