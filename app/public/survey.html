@@ -9,38 +9,36 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src = "../data/friends.js"></script>
+ 
 
 </head>
 <body>
   <div class = "container-fluid">
     <div class = "jumbotron">
-      <h2>Start the survey</h2>
+      <h1>Friend Finder</h1>
+      <h2>Take a quick survey and find your match!</h2>
     </div>
     <div class = "container-fluid">
         <div class = "row">
             <div class = "col col-md-4">
-                <form class="form-inline">
-                    <h4>Question 1</h4>
-                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">How active are you (5 is very)</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <div class = "startSurvey" style="display: none">
+                  <form class="form-inline">
+                      <h3 class = "questionNum"></h3>
+                      <h5 class = "askQuestion"></h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                             <option selected>Choose...</option>
-                            <option value="1">1</option>
+                            <option value="1">1 not so much</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                </form>
+                            <option value="5">5 very</option>
+                          </select>
+                    </form>
+                </div>
             </div>
-        </div>
-    
-            <div class="custom-control custom-checkbox my-1 mr-sm-2">
-              <input type="checkbox" class="custom-control-input" id="customControlInline">
-              <label class="custom-control-label" for="customControlInline">Remember my preference</label>
-            </div>
-          
-            <button type="submit" class="btn btn-primary my-1">Submit</button>
+          </div>          
+          <button type="submit" class="btn btn-primary my-1">Submit</button>
           
     </div>      
 </body>
@@ -50,4 +48,5 @@
       github repo</a>
     </div>
   </footer>
+  <script src = "../data/friends.js"></script>
 </html>
