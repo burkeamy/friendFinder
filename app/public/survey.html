@@ -18,16 +18,24 @@
       <h1>Friend Finder</h1>
       <h2>Take a quick survey and find your match!</h2>
     </div>
+    <div class="container">
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+    
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+      <hr>
+    </div>
     <div class = "container-fluid">
         <div class = "row">
             <div class = "col col-md-4">
-                <div class = "startSurvey" style="display: none">
-                  <form class="form-inline">
-                      <h3 class = "questionNum"></h3>
-                      <h5 class = "askQuestion"></h5>
+                <form class="form-inline">
+                    <h3>Question 1</h3>
+                      <h5>How active are you ?</h5>
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
                           <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                            <div class = "pickAnswer" onchange= "getSelection">
+                            <div class = "pickAnswer" id = "q1">
                             <option selected>Choose...</option>
                             <option value="1">1 not so much</option>
                             <option value="2">2</option>
@@ -36,7 +44,124 @@
                             <option value="5">5 very</option>
                             </div>
                           </select>
-                    </form>
+                    <h3>Question 2</h3>
+                      <h5>Do you enjoy being outside?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q2">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 3</h3>
+                      <h5>Do you like to travel?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q3">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 4</h3>
+                      <h5>Do you enjoy being with other people?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q4">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 5</h3>
+                      <h5>Do you eat out often?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q5">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 6</h3>
+                      <h5>Do you like spicy food?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q6">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 7</h3>
+                      <h5>Do you watch live sports?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q7">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 8</h3>
+                      <h5>Do you enjoy comedy movies?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q8">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 9</h3>
+                      <h5>Do you enjoy reading?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q9">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                    <h3>Question 10</h3>
+                      <h5>How important is family/frieds?</h5>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+                          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <div class = "pickAnswer" id = "q10">
+                            <option selected>Choose...</option>
+                            <option value="1">1 not so much</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 very</option>
+                            </div>
+                          </select>
+                      </form>
                 </div>
             </div>
           </div>          
@@ -46,9 +171,89 @@
 </body>
 <footer class="footer mt-4">
     <div class="container">
-      <p><a href="/api/tables">API friend finder</a> | <a href="/api/waitlist">
-      github repo</a>
+      <p><a href="/api/friends">API friend finder</a> | <a href=" https://burkeamy.github.io/friendFinder/.">github repo</a>  
     </div>
   </footer>
-  <script src = "../data/friends.js"></script>
+  <script type="text/javascript">
+    // picking out the users answers
+    let config = {
+      ".pickAnswer-select": {},
+      ".pickAnswer-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".pickAnswer-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".pickAnswer-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".pickAnswer-select-width": {
+        width: "95%"
+      }
+    };
+
+    for (let selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".pickAnswer-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        const userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function(data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+    console.log(userdata);
+  
+  </script>
 </html>

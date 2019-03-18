@@ -1,4 +1,4 @@
-var friends = [{
+const friends = [{
     name:"Hannah Montana",
     photo:"http://data.whicdn.com/images/70246635/original.gif",
     scores:[
@@ -76,5 +76,5 @@ var friends = [{
         5
       ]
   }]
-// Note how we export the array. This makes it accessible to other files using require.
+// Note now we export the array. This makes it accessible to other files using require.
 module.exports = friends;

@@ -1,11 +1,14 @@
 const path = require("path");
+const friendsData = require("../data/friends");
 
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+module.exports = function(app) {
 
-app.get('/',function(req,res) {
-    res.sendFile(path.join(__dirname,"../public/home.html"));
-});
+    app.get(friendsData, function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    });
 
-module.exports = 
+    app.get("*", function(req,res) {
+        res.sendFile(path.join(__dirname, ".../public/home.html"));
+    })
+console.log(friendsData)
+}

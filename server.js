@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //adding routes from routes.js
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiroutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("server is linstening on http://localhost" + PORT);

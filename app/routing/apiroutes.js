@@ -1,9 +1,16 @@
-var path = require('path');
-var friendsData = require("../data/friends");
+const path = require('path');
+const friendsData = require("../data/friends");
 module.exports = function(app) {
 
-//all get post routes go her
+    //API GET request from the page
+    app.get("/api/friends", function(req, res) {
+        res.json(friendsData);
+    });
 
+     //adds new friends to the list maybe
+    app.post("api/friends", function(req,res) {
+        friendsData.push(req.body);
+    })
 
 
 }
