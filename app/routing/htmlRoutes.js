@@ -3,7 +3,8 @@ const friendsData = require("../data/friends");
 
 module.exports = function(app) {
 
-    app.get(friendsData, function(req, res) {
+    //this is supposed to get the data from the survey page, I think
+    app.get("api/friends", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 

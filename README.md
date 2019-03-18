@@ -1,2 +1,2 @@
 # friendFinder
-a series of questions will match you with a new friend
+answer all 10 questions and find out who you are most compatable with
