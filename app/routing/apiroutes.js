@@ -9,21 +9,27 @@ module.exports = function (app) {
     });
     // Post new friend to friends array and call findFriend to get match
     app.post('/api/friends', function (req, res) {
+      console.log(req.body)
       let score = 0;
-      let newUser = [friendsData.length -1];
+      let allScores=[];
+      let newUser = req.body;
+      let newUser_Scores=newUser.scores;
+     
       for (let i = 0; i < friendsData.length; i ++) {
-        for (let j = 2; j < i.lenth; j++) { 
-          if (newUser[j] === friendsData[i][j]) {
-            score + 2;
-          } else if (newUser[j] <1 || >1 friendsData[i][j]) {
-            score ++;
-          } else {
-            score + 0;
-          }
-        }
+        //console.log(friendsData[i].name);
+//caluculate difference betwwen new friend and curent friend
+        for (let j = 0; j <10; j++) { 
+          score +=Math.abs(friendsData[i].scores[j] - newUser_Scores[j]);
+         // console.log(score);
+
+        } allScores.push(score);
+            score = 0;
+            console.log(allScores)
       }
       // Return name and photo link to callback function
-      res.json(req.body);
-
-    });
-  };
+     // res.json(req.body);
+     let bestMatch =friendsData[allScores.indexOf(Math.min.apply(null,allScores))] 
+     console.log(bestMatch);
+     res.send(bestMatch);
+   });
+};
